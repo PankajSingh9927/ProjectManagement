@@ -1,23 +1,82 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pankaj Singh\\Desktop\\MyProject\\ProductManagement\\ProductManagement\\ProductManagement.csproj": {}
+    "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\ProductManagement\\ProductManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pankaj Singh\\Desktop\\MyProject\\ProductManagement\\ProductManagement\\ProductManagement.csproj": {
+    "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Applications\\Applications.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pankaj Singh\\Desktop\\MyProject\\ProductManagement\\ProductManagement\\ProductManagement.csproj",
-        "projectName": "ProductManagement",
-        "projectPath": "C:\\Users\\Pankaj Singh\\Desktop\\MyProject\\ProductManagement\\ProductManagement\\ProductManagement.csproj",
-        "packagesPath": "C:\\Users\\Pankaj Singh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pankaj Singh\\Desktop\\MyProject\\ProductManagement\\ProductManagement\\obj\\",
+        "projectUniqueName": "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Applications\\Applications.csproj",
+        "projectName": "Applications",
+        "projectPath": "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Applications\\Applications.csproj",
+        "packagesPath": "C:\\Users\\PankajSingh\\.nuget\\packages\\",
+        "outputPath": "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Applications\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Pankaj Singh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PankajSingh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Domain\\Domain.csproj"
+              },
+              "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\PankajSingh\\.nuget\\packages\\",
+        "outputPath": "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PankajSingh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,17 +102,150 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.9, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
+              "version": "[6.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\PankajSingh\\.nuget\\packages\\",
+        "outputPath": "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PankajSingh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\ProductManagement\\ProductManagement.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\ProductManagement\\ProductManagement.csproj",
+        "projectName": "ProductManagement",
+        "projectPath": "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\ProductManagement\\ProductManagement.csproj",
+        "packagesPath": "C:\\Users\\PankajSingh\\.nuget\\packages\\",
+        "outputPath": "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\ProductManagement\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PankajSingh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Applications\\Applications.csproj": {
+                "projectPath": "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Applications\\Applications.csproj"
+              },
+              "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Domain\\Domain.csproj"
+              },
+              "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\my project\\Dot.net\\ProjectManagement\\ProductManagement\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.9, )"
+              "version": "[6.0.14, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -70,7 +262,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -82,7 +275,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,11 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Applications.Services;
+using Domain.Model;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using ProductManagement.Configration;
-using ProductManagement.Model;
 using ProductManagement.RequestDto;
-using ProductManagement.Services;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -74,24 +73,23 @@ namespace ProductManagement.Controllers
         [Route("add")]
         public IActionResult AddUser(UserDto user)
         {
-            var userData = _dbHelperSevices.GetCustomer()?.Where(x => !string.IsNullOrEmpty(x.Name) && x.Name.ToLower().Equals(user.UserName.Trim().ToLower()))?.FirstOrDefault();
-            if (userData != null)
-                return BadRequest("User alredy exist.");
-
-            var pwd = _encryptionService.EncryptText(user.Password, "");
-
-            var newUser = new Customer()
-            {
-                Name = user.UserName,
-                Email = user.Email,
-                Password = pwd,
-                CratedDate = DateTime.UtcNow,
-                UpdateDate = DateTime.UtcNow,
-                Identifier = Guid.NewGuid()
-            };
-           
             try
             {
+                var userData = _dbHelperSevices.GetCustomer()?.Where(x => !string.IsNullOrEmpty(x.Name) && x.Name.ToLower().Equals(user.UserName.Trim().ToLower()))?.FirstOrDefault();
+                if (userData != null)
+                    return BadRequest("User alredy exist.");
+
+                var pwd = _encryptionService.EncryptText(user.Password, "");
+
+                var newUser = new Customer()
+                {
+                    Name = user.UserName,
+                    Email = user.Email,
+                    Password = pwd,
+                    CratedDate = DateTime.UtcNow,
+                    UpdateDate = DateTime.UtcNow,
+                    Identifier = Guid.NewGuid()
+                };
                 _dbHelperSevices.AddCustomer(newUser);
 
                 return Ok("User added successfully");

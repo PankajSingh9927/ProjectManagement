@@ -1,0 +1,17 @@
+D:\my project\Dot.net\ProjectManagement\ProductManagement\Applications\bin\Debug\net6.0\Applications.deps.json
+D:\my project\Dot.net\ProjectManagement\ProductManagement\Applications\bin\Debug\net6.0\Applications.dll
+D:\my project\Dot.net\ProjectManagement\ProductManagement\Applications\bin\Debug\net6.0\Applications.pdb
+D:\my project\Dot.net\ProjectManagement\ProductManagement\Applications\bin\Debug\net6.0\Domain.dll
+D:\my project\Dot.net\ProjectManagement\ProductManagement\Applications\bin\Debug\net6.0\Infrastructure.dll
+D:\my project\Dot.net\ProjectManagement\ProductManagement\Applications\bin\Debug\net6.0\Domain.pdb
+D:\my project\Dot.net\ProjectManagement\ProductManagement\Applications\bin\Debug\net6.0\Infrastructure.pdb
+D:\my project\Dot.net\ProjectManagement\ProductManagement\Applications\obj\Debug\net6.0\Applications.csproj.AssemblyReference.cache
+D:\my project\Dot.net\ProjectManagement\ProductManagement\Applications\obj\Debug\net6.0\Applications.GeneratedMSBuildEditorConfig.editorconfig
+D:\my project\Dot.net\ProjectManagement\ProductManagement\Applications\obj\Debug\net6.0\Applications.AssemblyInfoInputs.cache
+D:\my project\Dot.net\ProjectManagement\ProductManagement\Applications\obj\Debug\net6.0\Applications.AssemblyInfo.cs
+D:\my project\Dot.net\ProjectManagement\ProductManagement\Applications\obj\Debug\net6.0\Applications.csproj.CoreCompileInputs.cache
+D:\my project\Dot.net\ProjectManagement\ProductManagement\Applications\obj\Debug\net6.0\Applications.csproj.CopyComplete
+D:\my project\Dot.net\ProjectManagement\ProductManagement\Applications\obj\Debug\net6.0\Applications.dll
+D:\my project\Dot.net\ProjectManagement\ProductManagement\Applications\obj\Debug\net6.0\refint\Applications.dll
+D:\my project\Dot.net\ProjectManagement\ProductManagement\Applications\obj\Debug\net6.0\Applications.pdb
+D:\my project\Dot.net\ProjectManagement\ProductManagement\Applications\obj\Debug\net6.0\ref\Applications.dll

@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Applications.Services;
+using Domain.Model;
+using Infrastructure;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProductManagement.Configration;
-using ProductManagement.Model;
 using ProductManagement.RequestDto;
-using ProductManagement.Services;
-using System.Linq;
 
 namespace ProductManagement.Controllers
 {

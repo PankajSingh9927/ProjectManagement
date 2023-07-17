@@ -1,9 +1,10 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Applications.Services;
+using Infrastructure;
+using Infrastructure.Repository;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using ProductManagement.Configration;
-using ProductManagement.Data;
-using ProductManagement.Services;
 using System.Data.SqlClient;
 using System.Text;
 using System.Text.Encodings.Web;
@@ -43,6 +44,7 @@ namespace ProductManagement
             services.AddScoped(typeof(IDbHelperSevices), typeof(DbHelperSevices));
 
 
+
             services.AddResponseCaching();
             var jwtOptions = _configuration.GetOptions<JwtSettings>(JwtSettings.SectionName);
             services.AddAuthentication(options =>
@@ -67,6 +69,7 @@ namespace ProductManagement
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddAuthorization();
+            services.AddSwaggerGen();
 
         }
 
@@ -100,14 +103,15 @@ namespace ProductManagement
             });
             app.UseEndpoints(endpoints =>
             {
-                endpoints .MapControllerRoute(
+                endpoints.MapControllerRoute(
                             name: "Default",
                             pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapControllers();
-                endpoints.MapGet("/", () =>
-                {
-                    return "Welcome Api Project";
-                });
+              
+            });
+            app.UseSwagger();
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V2");
             });
         }
 
